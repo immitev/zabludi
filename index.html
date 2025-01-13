@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логически заблуди</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Логически заблуди</h1>
+            <p>Логическата заблуда/грешка е трик, който те кара да мислиш, че нещо е вярно, когато не е. Не се оставай да някой да те подхлъзне с невалидни аргументи. За да не попадаш в такива капани, трябва да можеш бързо да ги разпознаваш. Тренираната логика е средставо за самозащита срещу манипулатори!</div>
+            </p>
+            <nav>
+                <input type="text" placeholder="Търсене на заблуда..." id="search">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards-container">
+            <!-- Cards will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Логиката е ценно оръжие за самозащита.</p>
+        </div>
+    </footer>
+
+    <script>
+        async function loadCards() {
+            const response = await fetch('data.json');
+            const data = await response.json();
+            const container = document.querySelector('.cards-container');
+
+            data.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.classList.add('card');
+                cardElement.innerHTML = `
+                    <h2>${card.title}</h2>
+                    <p>${card.description}</p>
+                    <div class="explanation">
+                        <strong>Обяснение:</strong> ${card.explanation}
+                    </div>
+                    <div class="example">
+                        <strong>Пример:</strong> ${card.example}
+                    </div>
+                    <a href="${card.link}" class="btn">Научи повече</a>
+                `;
+                container.appendChild(cardElement);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadCards);
+    </script>
+</body>
+</html>
