@@ -38,7 +38,10 @@
                 const cardElement = document.createElement('div');
                 cardElement.classList.add('card');
                 cardElement.innerHTML = `
-                    <h2>${card.title}</h2>
+                    <h2 style="display: flex; justify-content: space-between; align-items: center;">
+                        ${card.title}
+                        <img src="pizza.webp" width="32" height="32">
+                    </h2>
                     <div class="english">
                         ${card.english}
                     </div>
