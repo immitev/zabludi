@@ -80,12 +80,26 @@ header nav select {
     color: #666;
 }
 
-.card .explanation,
-.card .example {
+.card .english {
+    font-size: 0.75rem; /* Smaller font size */
+    color: #555; /* Neutral text color for better readability */
+    line-height: 1;
+    padding-bottom: 8px;
+}
+
+
+.card .explanation {
     margin: 10px 0;
     padding: 10px;
     background: #f9f9f9;
     border-left: 4px solid #ff9800;
+}
+
+
+.card .example {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
 }
 
 .card .btn {

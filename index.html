@@ -39,6 +39,9 @@
                 cardElement.classList.add('card');
                 cardElement.innerHTML = `
                     <h2>${card.title}</h2>
+                    <div class="english">
+                        ${card.english}
+                    </div>
                     <p>${card.description}</p>
                     <div class="explanation">
                         <strong>Обяснение:</strong> ${card.explanation}
@@ -46,7 +49,7 @@
                     <div class="example">
                         <strong>Пример:</strong> ${card.example}
                     </div>
-                    <a href="${card.link}" class="btn">Научи повече</a>
+                    <a href="https://yourlogicalfallacyis.com/${card.link}" class="btn">Научи повече</a>
                 `;
                 container.appendChild(cardElement);
             });
