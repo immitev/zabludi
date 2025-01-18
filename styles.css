@@ -55,6 +55,7 @@ header nav select {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
+    justify-content: space-around;
 }
 
 .card {
@@ -65,7 +66,9 @@ header nav select {
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
     transition: transform 0.2s;
-    height: 100%; /* Ensure cards stretch to the same height */
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -108,7 +111,6 @@ header nav select {
 
 .card .btn {
     display: inline-block;
-    margin-top: 10px;
     padding: 10px 20px;
     background: #ff9800;
     color: #fff;
@@ -116,11 +118,9 @@ header nav select {
     border-radius: 5px;
     text-align: center;
     transition: background 0.3s;
-    margin: 0 auto; /* Center the button horizontally */
-    margin-top: auto; /* Push the button to the bottom of the card */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Spread items evenly */
+    margin-top: auto;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card .btn:hover {
