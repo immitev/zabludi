@@ -109,7 +109,6 @@ header nav select {
     margin: 10px 0;
     padding: 10px;
     background: #f9f9f9;
-    border-left: 4px solid #ff9800;
 }
 
 
@@ -117,6 +116,7 @@ header nav select {
     margin: 10px 0;
     padding: 10px;
     background: #f9f9f9;
+    border-left: 4px solid #ff9800;
 }
 
 .card .btn {
