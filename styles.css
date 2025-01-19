@@ -51,6 +51,12 @@ header nav select {
     border-radius: 5px;
 }
 
+.highlight-frame {
+    outline: 3px solid #ff5722; /* Bright orange border */
+    outline-offset: 5px; /* Adds space between the border and the element */
+    transition: outline 0.3s ease-in-out; /* Smooth transition for the effect */
+}
+
 /* Карти със заблуди */
 .cards-container {
     display: flex;
