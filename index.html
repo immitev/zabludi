@@ -80,11 +80,12 @@
             data.forEach(card => {
                 const cardElement = document.createElement('div');
                 cardElement.classList.add('card');
-                cardElement.setAttribute('id', createValidId(card.title)); 
+                const cardId = createValidId(card.title);
+                cardElement.setAttribute('id', cardId); 
                 cardElement.innerHTML = `
                     <h2 style="display: flex; justify-content: space-between; align-items: center;">
                         ${card.title}
-                        <button onclick="navigator.share({url: window.location.origin + window.location.pathname + '#' + createValidId(card.title)})" style="border: none; background: none; cursor: pointer; padding: 4px;">
+                        <button onclick="navigator.share({url: window.location.origin + window.location.pathname + '#' + '${cardId}', text: '${card.title}', title: '${card.title}'})" style="border: none; background: none; cursor: pointer; padding: 4px;">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="18" cy="5" r="3"/>
                                 <circle cx="6" cy="12" r="3"/>
