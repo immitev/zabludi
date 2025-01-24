@@ -104,7 +104,11 @@
                 cardElement.innerHTML = `
                     <h2 style="display: flex; justify-content: space-between; align-items: center;">
                         ${card.title}
-                        <button onclick="navigator.share({url: window.location.origin + window.location.pathname + '#' + '${cardId}', text: '${card.title}', title: '${card.title}'})" style="border: none; background: none; cursor: pointer; padding: 4px;">
+                        <button onclick="navigator.share({url: window.location.origin + window.location.pathname + '#' + '${cardId}', 
+                                text: '${card.title}', 
+                                title: '${card.title}'})" 
+                            style="border: none; background: none; cursor: pointer; padding: 4px;" 
+                            title="Споделете линк към заблудата '${card.title}'">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="18" cy="5" r="3"/>
                                 <circle cx="6" cy="12" r="3"/>
