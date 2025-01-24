@@ -112,7 +112,7 @@
                         </button>
                     </h2>
                     <div class="english">
-                        ${card.english}
+                        <a href="https://rationalwiki.org/wiki/${card.link}" class="wiki-link">${card.english}</a>
                     </div>
                     <p>${card.description}</p>
                     <div class="example">
@@ -121,7 +121,6 @@
                     <div class="explanation">
                         <strong>Заблудата:</strong> ${card.explanation}
                     </div>
-                    <a href="https://rationalwiki.org/wiki/${card.link}" class="btn">Научи повече (английски)</a>
                 `;
                 container.appendChild(cardElement);
             });

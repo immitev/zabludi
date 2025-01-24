@@ -52,9 +52,9 @@ header nav select {
 }
 
 .highlight-frame {
-    outline: 3px solid #ff5722; /* Bright orange border */
-    outline-offset: 5px; /* Adds space between the border and the element */
-    transition: outline 0.3s ease-in-out; /* Smooth transition for the effect */
+    outline: 3px solid #ff9800;
+    outline-offset: 5px;
+    transition: outline 0.3s ease-in-out;
 }
 
 /* Карти със заблуди */
@@ -104,12 +104,9 @@ header nav select {
     padding-bottom: 8px;
 }
 
-
-.card .explanation {
-    margin: 10px 0;
-    padding: 10px;
+.card .wiki-link{
+    color: #f38702;
 }
-
 
 .card .example {
     margin: 10px 0;
@@ -118,22 +115,9 @@ header nav select {
     border-left: 4px solid #ff9800;
 }
 
-.card .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ff9800;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    transition: background 0.3s;
-    margin-top: auto;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card .btn:hover {
-    background: #f38702;
+.card .explanation {
+    margin: 10px 0;
+    padding: 10px;
 }
 
 /* Footer */
