@@ -135,6 +135,27 @@ footer p {
     margin: 0;
 }
 
+.license {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #f09b1d; /* Dark gray text for readability */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Spacing inside the box */
+    margin: 16px 0; /* Space around the license section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .license a {
+    color: #f58404; /* Blue links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .license a:hover {
+    text-decoration: underline;
+  }
+  
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;
