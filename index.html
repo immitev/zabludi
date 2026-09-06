@@ -1,181 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Логически заблуди</title>
-        <meta name="description" content="Научете за логическите заблуди и как да ги разпознавате.">
-        <meta name="keywords" content="логически заблуди, логически грешки, фалшиви аргументи, критично мислене, аргументи, манипулация, рационално мислене">
-        <meta name="author" content="Иван Митев">
-        <link rel="icon" type="image/png" href="favicon-32x32.png">
-        <link rel="stylesheet" href="styles.css">
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://zabludi.logi4no.com/">
-        <meta property="og:title" content="Логически заблуди">
-        <meta property="og:description" content="Научете за логическите заблуди и как да ги разпознавате.">
-        <meta property="og:image" content="https://zabludi.logi4no.com/clover-brain-facebook.jpg">
-        <!-- Twitter -->
-        <meta property="twitter:url" content="https://zabludi.logi4no.com/">
-        <meta property="twitter:title" content="Логически заблуди">
-        <meta property="twitter:description" content="Научете за логическите заблуди и как да ги разпознавате.">
-        <meta property="twitter:image" content="https://zabludi.logi4no.com/clover-brain-twitter.jpg"">
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NST4HZG30"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Логически заблуди — мисли критично</title>
+    <meta
+      name="description"
+      content="24 логически заблуди, обяснени с пица. Разгледай примерите и провери знанията си с кратък тест."
+    />
+    <meta name="author" content="Иван Митев" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=pizza3" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zabludi.logi4no.com/" />
+    <meta property="og:title" content="Логически заблуди" />
+    <meta
+      property="og:description"
+      content="Разпознай слабите аргументи. 24 логически заблуди, обяснени с пица."
+    />
+    <meta
+      property="og:image"
+      content="https://zabludi.logi4no.com/pizza-social.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Логически заблуди — не всеки аргумент е добре изпечен. Пица с отделено парче." />
+    <meta name="twitter:image:alt" content="Логически заблуди — пица с отделено парче." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Логически заблуди" />
+    <meta
+      name="twitter:description"
+      content="24 логически заблуди, обяснени с пица."
+    />
+    <meta
+      name="twitter:image"
+      content="https://zabludi.logi4no.com/pizza-social.jpg"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4NST4HZG30"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-4NST4HZG30');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4NST4HZG30");
     </script>
-<body>
-    <header>
-        <div class="container">
-            <h1>Логически заблуди</h1>
-            <p>Логическите заблуди/грешки са трикове, които те карат да мислиш, че нещо е вярно, когато не е.
-                <br>Запознай се с 24 от тях, популяризирани в сайта <a href="https://yourlogicalfallacyis.com/">Your Logical Fallacyis</a>. За по-изчерпателен списък, виж <a href="https://rationalwiki.org/wiki/Logical_fallacy">Rational Wiki</a>.
-                <br>
-                <br>Да те "подхлъзват" с фалшиви аргументи е като да те "цакат" със студена пица! 😠
-                <br>Примерите по-долу са все с пица, защото всички обичат пица 🍕. Нали?
-                <br>Хмм, дали това не е логическа заблуда? 🤔 И ако "да", каква? ❓
-            </p>
-            <p>🔔📝 След като се запознаеш със заблудите в сайта, можеш да провериш знанията си с един <a href="https://create.kahoot.it/details/80fdabd8-d2ab-4617-a2da-06492049de7e" target="_blank">бърз тест</a> в платформата <a href="https://kahoot.com/" target="_blank">Kahoot</a>.
-            </p>
-            <a href="https://pristrastia.logi4no.com/" target="_blank" style="position: absolute; top: 10px; right: 10px; color: #ff9800; text-decoration: underline; display: flex; align-items: center;">
-                Когнитивни пристрастия
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 4px;">
-                    <path d="M6.5 1a.5.5 0 0 0 0 1h5.793L1.146 13.146a.5.5 0 1 0 .708.708L13 2.707V8.5a.5.5 0 0 0 1 0v-7A.5.5 0 0 0 13.5 1h-7z"/>
-                </svg>
-            </a>
-        </div>
+    <script src="learning-data.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#collection">Към заблудите</a>
+    <header class="site-header">
+      <a class="brand" href="#top"
+        ><img src="pizza-mark.png" width="28" height="28" alt="" />
+        logi4no<span> / заблуди</span></a
+      >
+      <nav aria-label="Основна навигация">
+        <a href="#collection">Разгледай</a><a href="#practice">Провери се</a
+        ><a class="sibling" href="https://pristrastia.logi4no.com/"
+          >Когнитивни пристрастия ↗</a
+        >
+      </nav>
     </header>
-
-    <main>
-        <section class="cards-container">
-            <!-- Cards will be dynamically loaded here -->
-        </section>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Малък наръчник за критично мислене</p>
+            <h1 id="hero-title">Логически<br /><em>заблуди.</em></h1>
+            <p class="hero-lead">Не всеки аргумент<br />е добре изпечен.</p>
+            <p class="hero-description">
+              Разпознай 24 капана в мисленето с примери от света на пицата. И от
+              разговорите около нея.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="#collection"
+                >Разгледай заблудите <span aria-hidden="true">↘</span></a
+              ><a class="text-link" href="#practice">Провери се →</a>
+            </div>
+          </div>
+          <figure class="hero-art">
+            <img
+              src="pizza.webp"
+              width="1024"
+              height="1024"
+              alt="Илюстрирана пица с отделено парче"
+              fetchpriority="high"
+            />
+            <figcaption>
+              <span class="eyebrow">Звучи убедително?</span>
+              <blockquote>
+                „Последния път ядох пица и взех изпита. Утре вместо да уча, ще наблегна на пицата.“
+              </blockquote>
+              <a href="#falshiva-prichina"
+                >Открий заблудата <span aria-hidden="true">↗</span></a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hero-foot">
+          <span>24 заблуди · ежедневни примери · без сложни думи</span
+          ><span aria-hidden="true">Мисли. Питай. Проверявай. ↓</span>
+        </div>
+      </section>
+      <section
+        class="collection section-wrap"
+        id="collection"
+        aria-labelledby="collection-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Разгледай</p>
+            <h2 id="collection-title">Познай капана.</h2>
+          </div>
+          <p>Понякога грешката е в аргумента.<br />Не в човека отсреща.</p>
+        </div>
+        <div class="tools">
+          <label class="search"
+            ><span aria-hidden="true">⌕</span
+            ><span class="sr-only">Търси заблуда</span
+            ><input
+              id="search"
+              type="search"
+              placeholder="Търси име, понятие или пример…"
+              autocomplete="off" /></label
+          ><button id="random" class="button secondary" disabled>
+            Случайна заблуда ↗
+          </button>
+        </div>
+        <div id="filters" class="filters" aria-label="Филтри по тема"></div>
+        <div class="results-line">
+          <p id="result-count" role="status">Зареждане на заблудите…</p>
+          <button id="reset" class="text-link" hidden>Изчисти филтрите</button>
+        </div>
+        <div id="load-error" class="notice" role="alert" hidden>
+          <p>
+            Не успяхме да заредим заблудите. Провери връзката и опитай отново.
+          </p>
+          <button id="retry" class="button secondary">Опитай отново</button>
+        </div>
+        <div id="entries"></div>
+        <p id="empty" class="empty" hidden>
+          Няма намерени заблуди. Опитай с друга дума или тема.
+        </p>
+        <noscript
+          ><p>
+            За търсенето, примерите и теста е нужен JavaScript. Включи го в
+            браузъра, за да разгледаш съдържанието.
+          </p></noscript
+        >
+      </section>
+      <section class="practice" id="practice" aria-labelledby="practice-title">
+        <div class="section-wrap practice-layout">
+          <div>
+            <p class="eyebrow">02 / Провери се</p>
+            <h2 id="practice-title">А ти ще<br />се подведеш ли?</h2>
+            <p>
+              Пет ситуации. По един слаб аргумент.<br />Открий го и разбери
+              защо.
+            </p>
+            <a
+              class="quiet-link"
+              href="https://create.kahoot.it/details/80fdabd8-d2ab-4617-a2da-06492049de7e"
+              target="_blank"
+              rel="noopener"
+              >За игра в клас: отвори Kahoot ↗</a
+            >
+          </div>
+          <div id="quiz" class="quiz-panel">
+            <p class="eyebrow">Кратка тренировка</p>
+            <h3>Добрият въпрос е начало.</h3>
+            <p>
+              Избери отговор, прочети обяснението и продължи. Няма таймер и няма
+              нужда от регистрация.
+            </p>
+            <button id="start-quiz" class="button primary">
+              Започни с 5 въпроса →
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="about section-wrap" id="about">
+        <p class="eyebrow">За проекта</p>
+        <div class="about-grid">
+          <h2>По-добри разговори.<br />По-ясно мислене.</h2>
+          <div>
+            <p>
+              Логическата заблуда е грешка в аргументацията. Може да я
+              използваме и неволно. А слабият аргумент сам по себе си не
+              означава, че заключението е невярно.
+            </p>
+            <p>
+              Тези 24 примера са вдъхновени от
+              <a href="https://yourlogicalfallacyis.com/"
+                >Your Logical Fallacy Is</a
+              >. За още понятия виж
+              <a href="https://rationalwiki.org/wiki/Logical_fallacy"
+                >Rational Wiki</a
+              >. Темите тук са ориентир за разглеждане, а не строга
+              класификация.
+            </p>
+            <a class="text-link" href="https://pristrastia.logi4no.com/"
+              >Опознай и когнитивните пристрастия ↗</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>Логиката е суперсила 💪 срещу всякакви съзнателни или несъзнателни манипулации!
-                <br>Но с голямата сила идва и голямата отговорност!
-                <br>Когато искаш да убедиш другите в правотата си, наблягай на 🧠 рационални аргументи и избягвай 🐍 фалшивите аргументи!</p>
-        </div>
-        <div class="license">
-            <p>
-                Съдържанието в сайта е под <a href="https://creativecommons.org/licenses/by/4.0/deed.bg" target="_blank">лиценз Creative Commons Признание 4.0 Международен</a>.
-            </p>
-            <p>
-                Ако имате въпроси и препоръки по съдържанието на сайта, можете да отворите дискусия в <a href="https://github.com/immitev/zabludi/discussions" target="_blank">GitHub</a>.
-            </p>
-        </div>
+    <footer class="section-wrap">
+      <a class="brand" href="#top">logi4no<span> / заблуди</span></a>
+      <p>
+        Създадено от Иван Митев ·
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.bg"
+          >CC BY 4.0</a
+        >
+      </p>
+      <a href="https://github.com/immitev/zabludi/discussions"
+        >Идеи и обратна връзка ↗</a
+      >
     </footer>
-
-    <script>
-        function createValidId(cyrillicText) {
-            const transliterationMap = {
-                "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ж": "zh", "з": "z", "и": "i",
-                "й": "y", "к": "k", "л": "l", "м": "m", "н": "n", "о": "o", "п": "p", "р": "r", "с": "s",
-                "т": "t", "у": "u", "ф": "f", "х": "h", "ц": "ts", "ч": "ch", "ш": "sh", "щ": "sht",
-                "ъ": "a", "ы": "y", "ь": "", "ю": "yu", "я": "ya",
-                "А": "A", "Б": "B", "В": "V", "Г": "G", "Д": "D", "Е": "E", "Ж": "Zh", "З": "Z", "И": "I",
-                "Й": "Y", "К": "K", "Л": "L", "М": "M", "Н": "N", "О": "O", "П": "P", "Р": "R", "С": "S",
-                "Т": "T", "У": "U", "Ф": "F", "Х": "H", "Ц": "Ts", "Ч": "Ch", "Ш": "Sh", "Щ": "Sht",
-                "Ъ": "A", "Ы": "Y", "Ь": "", "Ю": "Yu", "Я": "Ya"
-            };
-
-            // Replace each Cyrillic character with its corresponding Latin equivalent
-            const latinText = cyrillicText.split('').map(char => transliterationMap[char] || char).join('');
-
-            // Replace spaces with dashes, and ensure the result is lowercase
-            const validId = latinText.replace(/\s+/g, '-').toLowerCase();
-
-            return validId;
-        }
-
-        function scrollToAnchor() {
-            const hash = window.location.hash; // Get the fragment (e.g., #dvusmislie)
-            if (hash) {
-                const target = document.querySelector(hash);
-                if (target) {
-                    // Scroll to the element
-                    target.scrollIntoView({ behavior: 'smooth' });
-
-                    // Add a highlight effect
-                    target.classList.add('highlight-frame');
-                    setTimeout(() => {
-                        target.classList.remove('highlight-frame');
-                    }, 3000);
-                }
-            }
-        }
-
-
-        async function loadCards() {
-            const response = await fetch('data.json');
-            const data = await response.json();
-            const container = document.querySelector('.cards-container');
-
-            data.forEach(card => {
-                const cardElement = document.createElement('div');
-                cardElement.classList.add('card');
-                const cardId = createValidId(card.title);
-                cardElement.setAttribute('id', cardId); 
-                cardElement.innerHTML = `
-                    <h2 style="display: flex; justify-content: space-between; align-items: center;">
-                        ${card.title}
-                        <button onclick="navigator.share({url: window.location.origin + window.location.pathname + '#' + '${cardId}', 
-                                text: '${card.title}', 
-                                title: '${card.title}'})" 
-                            style="border: none; background: none; cursor: pointer; padding: 4px;" 
-                            title="Споделете линк към заблудата '${card.title}'">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="18" cy="5" r="3"/>
-                                <circle cx="6" cy="12" r="3"/>
-                                <circle cx="18" cy="19" r="3"/>
-                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
-                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-                            </svg>
-                        </button>
-                    </h2>
-                    <div class="english">
-                        <a href="https://rationalwiki.org/wiki/${card.link}" class="wiki-link">${card.english}</a>
-                    </div>
-                    <p>${card.description}</p>
-                    <div class="example">
-                        <img src="pizza.png" alt="Пример с пица">
-                        <strong>Пример:</strong> ${card.example}
-                    </div>
-                    <div class="explanation">
-                        <img src="caution.png" alt="Каква е заблудата">
-                        <strong>Заблудата:</strong> ${card.explanation}
-                    </div>
-                `;
-                container.appendChild(cardElement);
-            });
-
-            // Scroll after the dynamic content has been created
-            scrollToAnchor();
-        }
-
-        document.addEventListener('DOMContentLoaded', loadCards);
-
-        // Handle navigation clicks dynamically as well
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-    </script>
-
-    <script src="https://app.livechatai.com/embed.js" data-id="cm701ts1x0001l90af7jul0af" async defer></script>
-</body>
+    <div id="toast" class="toast" role="status"></div>
+    <dialog id="share-dialog">
+      <h2>Линк към заблудата</h2>
+      <label for="share-url">Копирай адреса:</label
+      ><input id="share-url" readonly />
+      <form method="dialog">
+        <button class="button primary">Затвори</button>
+      </form>
+    </dialog>
+  </body>
 </html>
